@@ -1,0 +1,134 @@
+/* body {
+    text-align: center;
+    background-color: #282B2B;
+    color: white;
+  }
+#app {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #4BDECC;
+    margin-top: 50px;
+    padding: 50px 0;
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+  }
+  #quote-box {
+    font-size: 45px;
+    padding: 0 40px;
+    line-height: 1.1;
+  }
+  #author-box {
+    font-size: 33px;
+    margin-top: 64px;
+    padding: 0 50px;
+  }
+  .quote-input {
+    text-align: center;
+    padding: 20px;
+  }
+  .author-input {
+    text-align: center;
+    padding: 20px;
+  }
+  div#dashboard {
+    padding-bottom: 40px;
+  } */
+
+#dashboard {
+    text-align: center;
+}
+.btn-grp {
+    margin-top: 60px;
+    text-align: center;
+}
+  body { 
+    background-color: #292a2b;
+    color: white;
+   }
+  
+  /* center the blockquote in the page */
+  .blockquote-wrapper {
+     display: flex;
+     /* height: 100vh; */
+     padding: 0 20px;
+  }
+  
+  /* Blockquote main style */
+  .blockquote {
+      position: relative;
+      font-family: 'Barlow Condensed', sans-serif;
+      max-width: 620px;
+      margin: 80px auto;
+      align-self: center;
+  }
+  
+  /* Blockquote header */
+  #quote-box {
+      font-family: 'Abril Fatface', cursive;
+      position: relative; /* for pseudos */
+      color: #e74848;
+      font-size: 2.8rem;
+      font-weight: normal;
+      line-height: 1.2;
+      margin: 0;
+      border: 2px solid #fff;
+      border: solid 2px;
+      border-radius:20px;
+      padding: 25px;
+  }
+
+  #author-box {
+    color: #e74848;
+  }
+  
+  /* Blockquote right double quotes */
+  .blockquote h1:after {
+      content:"";
+      position: absolute;
+      border: 2px solid #e74848;
+      border-radius: 0 50px 0 0;
+      width: 60px;
+      height: 60px;
+      bottom: -62px;
+      left: 50px;
+      border-bottom: none;
+      border-left: none;
+      z-index: 3; 
+  }
+  
+  .blockquote h1:before {
+      content:"";
+      position: absolute;
+      width: 80px;
+      border: 6px solid #292a2b;
+      bottom: -3px;
+      left: 50px;
+      z-index: 2;
+  }
+  
+  /* increase header size after 600px */
+  @media all and (min-width: 600px) {
+      .blockquote h1 {
+          font-size: 3rem;
+          line-height: 1.2;
+     }
+  
+  }
+  
+  /* Blockquote subheader */
+  .blockquote h4 {
+      position: relative;
+      color: #ffffff;
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 0;
+      padding-top: 15px;
+      z-index: 1;
+      margin-left:150px;
+      padding-left:12px;
+  }
+  
+   
+  .blockquote h4:first-letter {
+    margin-left:-12px;
+  }
